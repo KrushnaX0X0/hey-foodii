@@ -1,0 +1,451 @@
+@font-face {
+    font-family: gily-roy;
+    src: url(Gilroy-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: gily-roy;
+}
+
+#form-div{
+    height: 70vh;
+    width: 30vw;
+    border: 1px solid white;
+    background-color: rgba(10, 10, 10, 0.801);
+    position: absolute;
+    right: 0;
+    z-index: 15;
+    top: 20%;
+    border-radius: 15px;
+    display: none;
+
+}
+
+#form-div #cross{
+    height: 6vh;
+    width: 6vw;
+}
+#form-div #cross img{
+    height: 100%;
+    width: 100%;
+}
+#form-div form,#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4vh;
+   color: white;
+}
+
+#form-div form input,textarea{
+    height: 5vh;
+    width: 20vw;
+    font-size: 1vw;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    border:1px solid transparent;
+    border-bottom-color: white;
+
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.719);
+}
+
+input:focus{
+    outline: none;
+    
+}
+
+form button{
+    padding: 1.5vh 5vw;
+    background-color: #ff1e;
+    border: none;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+nav{
+    height: 10vh;
+    width: 100vw;
+   background-image: linear-gradient(to left,rgba(255, 255, 17, 0.363),white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+}
+
+nav #logo{
+    height: 10vh;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+list-style: none;
+color: white;
+font-size: 1.5vw;
+}
+
+nav ul li{
+    padding: 0.5vh 2.5vw;
+    background-color: aliceblue;
+    border-radius: 15px;
+background:#ff1e;
+box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+margin-right: 2vw;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+}
+
+
+
+#first{
+   margin-top: 3vh;
+   margin-left: 1vw;
+   border-radius: 17px;
+    height: 90vh;
+    width: 80vw;
+    background-color: #95d9e9;
+}
+
+#first-txt{
+    height: 100%;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#slogan h1{
+    font-size:5.5vw;
+   font-weight: bolder;
+}
+
+#slogan button{
+    border: none;
+    font-size: 1.3vw;
+    margin-top: 4vh;
+    padding: 1.9vh 3.3vw;
+    background-color: #ff1e;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-left: 2vw;
+
+}
+
+#img-div{
+    height: 65vh;
+    width: 40vw;
+    margin-left: 2vw;
+}
+
+#img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    filter: drop-shadow(20px 20px 60px rgba(0, 0, 0, 0.288));
+    
+}
+
+#second{
+ height: 70vh;
+ width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 5vh;
+
+}
+
+
+#sec-img{
+    height: 70vh;
+    width: 50%;
+
+}
+
+#sec-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+#sec-txt{
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+
+
+#client{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+#client #client-txt{
+    font-size: 4vw;
+    margin-top: 10vh;
+    font-weight: bold;
+}
+
+#client-img{
+ display: flex;
+ gap: 2vw;
+
+}
+
+#client-img div{
+    height: 15vh;
+    width: 20vw;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 134, 0.692);
+}
+#client-img div img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transition: all 0.5s ease-in;
+}
+#client-img div img:hover{
+    scale: 1.1;
+}
+
+
+#last{
+    height: 50vh;
+    width: 100vw;
+    margin-left: 5vw;
+}
+
+#last form{
+    height: 40vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vh;
+    margin-left: 5vw;
+    border: 0.1px solid black;
+    border-radius: 15px;
+}
+
+
+
+#last form input,textarea{
+    margin-left: 4vw;
+    height: 5vh;
+    width: 15vw;
+    font-size: 1vw;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    border:1px solid transparent;
+    border-bottom-color: white;
+}
+
+
+#name{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+   
+    
+nav{
+    height: 8vh;
+    width: 100vw;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+}
+
+nav #logo{
+    height: 10vh;
+    width: 10vw;
+}
+
+nav ul{
+    
+font-size: 2vw;
+}
+
+nav ul li{
+    padding: 0.5vh 3vw;
+
+}
+
+
+
+
+#first{
+     height: 50vh;
+     width:70vw;
+ }
+ 
+ #first-txt{
+     height: 100%;
+     width: 100vw;
+ }
+ 
+ 
+ #slogan h1{
+     font-size:7vw;
+    font-weight: bolder;
+ }
+ 
+ #slogan button{
+     border: none;
+     font-size: 3vw;
+     margin-top: 4vh;
+     padding: 1vh 7vw;
+ 
+ }
+ 
+ #img-div{
+     height: 30vh;
+     width: 100vw;
+     margin-left: 2vw;
+ }
+ 
+ 
+
+ #second{
+    height: 50vh;
+    width: 100vw;
+   
+   }
+   
+   
+   #sec-img{
+       height: 50vh;
+       width: 50%;
+   
+   }
+  #sec-txt{
+    font-size: 5vw;
+  }
+
+
+  #form-div{
+    height: 70vh;
+    width: 70vw;
+
+}
+
+
+
+
+#form-div form input,textarea{
+    height: 5vh;
+    width: 60vw;
+    font-size: 3vw;
+
+}
+
+
+form button{
+    padding: 1.5vh 14vw;
+    background-color: #ff1e;
+    border: none;
+    border-radius: 7px;
+    font-size: 3vw;
+}
+
+
+
+#client{
+    height: 100vh;
+    width: 100vw;
+}
+
+#client #client-txt{
+    font-size: 5vw;
+    margin-top: 1vh;
+    font-weight: bold;
+}
+
+#client-img{
+ display: flex;
+ flex-direction: column;
+ gap: 2vw;
+
+}
+
+#client-img div{
+    height: 15vh;
+    width: 50vw;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 134, 0.692);
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+#last form input,textarea{
+    margin-left: 4vw;
+    height: 5vh;
+    width: 40vw;
+    font-size: 3vw;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    border:1px solid transparent;
+    border-bottom-color: white;
+}
+
+
+
+}

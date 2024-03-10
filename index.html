@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Hey-foodii</title>
+</head>
+<body>
+     
+   <div id="form-div">
+     <div id="cross">
+        <img src="cross.svg" alt="">
+     </div>
+        <form action="https://formspree.io/f/mjvnoopz"
+        method="POST">
+            <h2>Order Now</h2>
+              <input type="text" name="name" placeholder="enter your name" required>
+              <input type="number"  name="mobNO" placeholder="enter your mobile number" required>
+              <input type="text" name="adress" placeholder="enter your adress" required>
+              <textarea id=""  name="orderInfo" cols="30" rows="9" placeholder="enter food that you want" required></textarea>
+              <button type="submit">Order</button>
+               <button type="reset">Clear</button>
+            </form>
+
+   </div>
+
+
+    <nav>
+        <div id="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+           <li><a href="#first">Home</a></li>
+           <li><a href="#second">Food</a></li>
+           <li><a href="#client">our client</a></li>
+           <li><a href="#last">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div id="first">
+        <div id="first-txt">
+            <div id="slogan">
+                <h1>Delicious bits endless delights,<br>
+                 Discover a world of flavors</h1>
+                 <button id="orderNow">Order Now</button>
+            </div>
+
+            <div id="img-div">
+                <img src="img.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="second">
+        <div id="sec-img">
+            <img src="dish.png" alt="">
+        </div>
+        <div id="sec-txt">
+            Get Cities top food in just one click
+        </div>
+        
+    </div>
+
+<div id="client">
+    <div id="client-txt">Our Clients</div>
+    <div id="client-img">
+        <div><img src="c1.png" alt=""></div>
+        <div><img src="c2.png" alt=""></div>
+        <div><img src="c3.png" alt=""></div>
+        <div><img src="c4.png" alt=""></div>
+    </div>
+</div>
+
+
+<div id="last">
+    <h1>Contact Us</h1>
+    <form  action="https://formspree.io/f/xayrbblg"
+    method="POST" id="contat">
+        <input type="email" name="email" id="" placeholder="enter your email">
+        <textarea name="qury" id="" cols="30" rows="10" placeholder="enter your qury"></textarea>
+        <button type="submit" style="margin-left: 4vw;">Submit</button>
+    </form>
+</div>
+    
+
+<div id="name">
+   <h3> design & code by krushna</h3>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
